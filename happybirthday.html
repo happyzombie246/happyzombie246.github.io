@@ -1,18 +1,104 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>生日快乐！</title>
+    <title>黄泽玉生日快乐！</title>
+    <audio 
+ autoplay="autoplay" 
+ loop="loop" 
+ preload="auto"
+ src="哈基基米慌慌.mp3">
+    </audio>
     <style>
-        body { 
-            font-family: Arial; 
-            text-align: center; 
-            background: pink;
+        /* 复古样式 */
+        body {
+            background-color: #000080; /* Windows 95经典蓝 */
+            background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+            font-family: "Comic Sans MS", "Arial", serif;
+            color: lime;
+            text-align: center;
+            margin-top: 50px;
+        }
+        h1 {
+            color: #ff00ff; /* 亮粉色 */
+            text-shadow: 3px 3px black;
+            font-size: 2.5em;
+        }
+        img {
+            border: 4px ridge #00ffff; /* 青色边框 */
+            margin: 20px;
+        }
+        /* 隐藏网易云播放器控件（视觉更干净） */
+        iframe {
+            border: none !important;
+            margin-top: 20px;
+        }
+
+ .gif-background {
+            position: absolute;
+            top: 0;
+            left: 34%;
+            width: 600px;
+            height: 600px;
+            z-index: -1; /* 确保在内容下方 */
+            border: 0;
+        }
+
+/* 闪烁动画 */
+@keyframes blink {  
+  0% { opacity: 1; }  
+  50% { opacity: 0; }  
+  100% { opacity: 1; }  
+}  
+
+/* 应用闪烁效果 */
+.blink {  
+  animation: blink 1s infinite;  
+  color: #ff00ff; /* 亮粉色（复古风） */
+  font-weight: bold;
+}
+/* 固定在底部的计数器 */
+        .counter {
+            position: fixed;
+            bottom: 10px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.5); /* 半透明背景 */
+            padding: 5px;
+            font-family: "Comic Sans MS", cursive;
         }
     </style>
 </head>
 <body>
+    <!-- 复古表格标题栏 -->
+    <table border="4" bordercolor="purple" cellspacing="0" style="background: cyan; margin: 0 auto;">
+        <tr>
+            <td> 
+  <marquee behavior="scroll" direction="left">
+    <font color="black">✨ 黄泽玉生日快乐！ ✨⚠️ 本页面最佳浏览体验：IE 4.0 + 800x600分辨率 ⚠️</font>
+  </marquee>
+</td>
+        </tr>
+    </table>
+
+    <img class="gif-background" src="1.gif" alt="背景特效">
+    <!-- 主要内容 -->
     <h1>🎉 祝黄泽玉生日快乐！ 🎉</h1>
-    <p>来自网友的神秘祝福</p>
-    <img src="https://via.placeholder.com/300" alt="生日图片">
+    <p>来自 <span class="blink">卡通苹果猫猫</span> 的祝福</p>
+    <img src="1.jpg" alt="生日图片" width="300"> <!-- 替换为真实图片链接 -->
+
+
+
+    <!-- 90年代必备元素 -->
+    <marquee  behavior="scroll" 
+  direction="right" 
+  scrollamount="30" 
+  style="color: #ff00ff; font-size: 24px;">
+        🎂 🎈 🍰 现在是2005年4月3日 生日快乐！🍰 🎁 🎊
+    </marquee>
+        <div class="counter">
+        你是第 <span class="blink">0002</span> 位访客
+    </div>
+
 </body>
 </html>
